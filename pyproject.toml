@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evon"
+version = "0.1.0"
+description = "An optimizer for neural networks based on variational learning"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=2.0.0",
+    "numpy",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
+[tool.setuptools]
+py-modules = ["evon"]
+
+[tool.setuptools.package-dir]
+"" = "evon-src"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:.*script_method.*:DeprecationWarning",
+]
+
+
