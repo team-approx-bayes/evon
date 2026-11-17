@@ -1,8 +1,9 @@
 # Eigenspace Variational Online Newton (EVON)
 
+[![NeurIPS](https://img.shields.io/badge/NeurIPS-2026-b31b1b.svg)](https://neurips.cc/virtual/2026/loc/sydney/poster/151769)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.23357-b31b1b.svg)](https://arxiv.org/abs/2606.23357)
 [![Python Version](https://img.shields.io/badge/python-%3E%3D%203.8-blue.svg)](https://pyproject.toml)
-[![PyTorch](https://img.shields.io/badge/PyTorch-%3E%3D%202.0.0-ee4c2c.svg)](https://pytorch.org)
+[![PyTorch](https://img.shields.io/badge/PyTorch-%3E%3D%202.0.0-blue.svg)](https://pytorch.org)
 [![License](https://img.shields.io/badge/License-GPLv3%2B-blue.svg)](LICENSE)
 
 Official PyTorch implementation of the **EVON (Eigenspace Variational Online Newton)** optimizer, introducing **SOAP-Bubbles** for structured weight uncertainty in deep neural networks at scale. Code for the paper's experiments is available at: [team-approx-bayes/evon-experiments](https://github.com/team-approx-bayes/evon-experiments).
@@ -10,7 +11,7 @@ Official PyTorch implementation of the **EVON (Eigenspace Variational Online New
 > [!NOTE]
 > **SOAP-Bubbles: Structured Weight Uncertainty for Neural Networks**  
 > _Adrian Robert Minut, Nico Daheim, Marco Miani, Mohammad Emtiyaz Khan, Wu Lin, Thomas Möllenhoff_  
-> **ArXiv Paper**: [https://arxiv.org/abs/2606.23357](https://arxiv.org/abs/2606.23357)
+> [**ArXiv Paper**](https://arxiv.org/abs/2606.23357) - [**NeurIPS 2026 Poster**](https://neurips.cc/virtual/2026/loc/sydney/poster/151769)
 
 ---
 
@@ -162,13 +163,11 @@ uv run pytest
 If you use EVON or the SOAP-Bubbles framework in your research, please cite our paper:
 
 ```bibtex
-@misc{minut2026soapbubbles,
-      title={SOAP-Bubbles: Structured Weight Uncertainty for Neural Networks}, 
+@inproceedings{minut2026soapbubbles,
+      title={{SOAP}-Bubbles: Structured Weight Uncertainty for Neural Networks},
       author={Adrian Robert Minut and Nico Daheim and Marco Miani and Mohammad Emtiyaz Khan and Wu Lin and Thomas M{"o}llenhoff},
+      booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
       year={2026},
-      eprint={2606.23357},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
       url={https://arxiv.org/abs/2606.23357}
 }
 ```
